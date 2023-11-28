@@ -1,0 +1,49 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f8fc;
+}
+
+span.loading {
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20rem auto;
+    border: .85rem solid #6c79db;
+    border-top: 12px solid transparent;
+    border-radius: 50%;
+
+    animation: loading-span 1s linear infinite;
+}
+
+@keyframes loading-span {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.content {
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 6rem auto;
+        border-radius: 1rem;
+    }
+}
